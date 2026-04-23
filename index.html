@@ -1,16 +1,67 @@
+<!-- Sumaiyah & Melissa - WeatherWise Project -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Visualization Project</title>
+    <title>WeatherWise</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- Add any external javascript libraries here with a <script> tag -->
-    
+
 </head>
+
 <body>
-    
+    <h1>WeatherWise🌤️</h1>
+
+    <!-- Search -->
+    <input type="text" id="zip" placeholder="Enter ZIP code">
+    <button onclick="getWeather()">Search</button>
+
+    <!-- Loading -->
+    <p id="loading"></p>
+
+    <!-- Weather Info -->
+    <h2 id="location"></h2>
+    <p id="temp"></p>
+    <p id="forecast"></p>
+
+    <!-- Activities -->
+    <h3>What can you do today?</h3>
+    <ul id="activities"></ul>
+
+    <!-- Background -->
+    <div class="sun"></div>
+    <div class="floating" style="left:10%;"></div>
+    <div class="floating" style="left:25%;"></div>
+    <div class="floating" style="left:50%;"></div>
+    <div class="floating" style="left:75%;"></div>
+
+    <h3>Temperature Trend</h3>
+
+    <select id="timeRange">
+        <option value="12">Next 12 Hours</option>
+        <option value="24" selected>Next 24 Hours</option>
+        <option value="48">Next 48 Hours</option>
+    </select>
+
+    <select id="chartType">
+        <option value="line">Line Chart</option>
+        <option value="bar">Bar Chart</option>
+    </select>
+    <select id="unitToggle">
+        <option value="F" selected>Fahrenheit (°F)</option>
+        <option value="C">Celsius (°C)</option>
+    </select>
+
+    <button onclick="updateChart()">Update Chart</button>
+
+    <canvas id="weatherChart"></canvas>
     <script src="script.js"></script>
+
 </body>
+
 </html>

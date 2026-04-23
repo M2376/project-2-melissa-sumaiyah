@@ -1,0 +1,108 @@
+/* Sumaiyah & Melissa - styling */
+
+body {
+    font-family: Courier New, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #cce7ff, #e6f3ff);
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background-color: #4da6ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* hover interaction */
+button:hover {
+    background-color: #3399ff;
+}
+
+/* activities */
+li {
+    background: white;
+    margin: 6px auto;
+    padding: 8px;
+    width: 220px;
+    border-radius: 10px;
+}
+
+/* sun */
+.sun {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    background: rgb(255, 255, 7);
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(255, 255, 0, 0.7);
+    animation: spinSun 8s linear infinite;
+}
+
+@keyframes spinSun {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* flowers */
+.floating {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    animation: floatUp 10s linear infinite;
+}
+
+.floating::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: yellow;
+    border-radius: 50%;
+    top: 6px;
+    left: 6px;
+}
+
+.floating::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: pink;
+    border-radius: 50%;
+    box-shadow:
+        0 -10px pink,
+        10px 0 pink,
+        0 10px pink,
+        -10px 0 pink;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(100vh);
+    }
+
+    to {
+        transform: translateY(-10vh);
+    }
+}

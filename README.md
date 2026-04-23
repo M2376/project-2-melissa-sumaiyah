@@ -2,7 +2,7 @@
 
 ## Team members
 
-- Add all the names of all the team members
+- Sumaiyah Baksh & Melissa Mena Rodriguez
 
 ## Live Demo
 
@@ -10,26 +10,31 @@
 
 ## Project Overview
 
-- Briefly describe the purpose of the project.
-- Explain what live data set was used, and what you hope users would learn about the data set by using your project
+- WeatherWise is an interactive weather website that allows users to enter a ZIP code and receive live weather data from a government API. The purpose of this project is to make real-world weather data easier to understand by turning it into a simple, visual, and user-friendly experience.
+- The live dataset comes from the National Weather Service API (weather.gov), which provides real-time weather forecasts based on location. Users can learn how weather conditions change by location and time, and the project also suggests activities based on the current weather (for example, indoor activities on rainy days or outdoor activities on sunny days).
 
 ## Features
 
-- List all (at least 3) distinct types of user interaction, such as filtering, sorting, modifying data views, or changing the data presentation.
+- ZIP code search to get live weather data for a location Dynamic weather display (temperature, forecast, and location name) Activity suggestions based on weather conditions Animated visual elements (sun and floating flowers) Loading indicator while data is being fetched Hover interactions for buttons and activity list items
 
 ## Technologies Used
 
-- List the technologies and tools used in the project:
-    - **Languages**: HTML, CSS, JavaScript
-    - **Libraries**: (e.g., GSAP for animations)
-    - **APIs**: Public APIs where the data set comes from
-    - **Other**: Figma for design, Adobe Illustrator for illustrations, OpenAI for A.I. generated assets, etc.
+- Languages: HTML, CSS, JavaScript 
+- APIs: National Weather Service API (weather.gov) Zippopotam.us API (for converting ZIP codes to coordinates) 
+- Other Tools: Basic debugging and development assistance using online documentation and AI tools 
+- Browser Developer Tools for testing and fixing errors
 
 ## Future Enhancements
 
-- List any features you would’ve liked to add if given more time
+- Improve activity suggestions with more categories and better UI design
+- Add unit switching (°F / °C toggle)
+- Improve layout into cards for better readability
+- Add location-based weather icons for each condition
 
 ## Credits
 
-- List any third-party assets used in the project (e.g., sound effects, images, fonts) and provide proper attribution.
-- Acknowledge any resources, tutorials, or references you used to help complete the project.
+- Weather data provided by the National Weather Service API (weather.gov)
+- ZIP code conversion provided by Zippopotam.us API
+- Project designed and coded by Sumaiyah & Melissa
+- Debugging and development support assisted by documentation and AI tools for learning and troubleshooting
+- Inspired by public weather and data visualization projects such as NOAA and open-data dashboards
